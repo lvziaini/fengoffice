@@ -73,42 +73,7 @@
 	</div>
 <?php } ?>
 	 
-<div class="formBlock">	   
-	<div id="<?php echo $genid ?>update_profile_timezone" >
-		<label><?php echo lang('auto detect user timezone') ?></label>
-		<div id ="<?php echo $genid?>detectTimeZone">
-			<?php echo yes_no_widget('user[autodetect_time_zone]', 'userFormAutoDetectTimezone', user_config_option('autodetect_time_zone', null, $user->getId()), lang('yes'), lang('no'), null, array('onclick' => "og.showSelectTimezone('$genid')")) ?>
-		</div>
-		<div id="<?php echo $genid?>selecttzdiv" <?php if (user_config_option('autodetect_time_zone', null, $user->getId())) echo 'style="display:none"'; ?>>
-			<?php echo select_timezone_widget('user_timezone', array_var($user_data, 'timezone'), array('id' => 'userFormTimezone', 'class' => 'long', 'tabindex' => '600' )) ?>
-			<input id="userFormTimezoneHidden" type="hidden" name="user[timezone]" />
-		</div>
-		 
-		<script type="text/javascript">
-		  
-			og.showSelectTimezone = function(genid)	{
-				check = document.getElementById("userFormAutoDetectTimezoneYes");
-				div = document.getElementById(genid + "selecttzdiv");
-				div.style.display = check.checked ? "none" : "";
-			};
 
-			og.getTimezoneFromBrowser = function(server) {
-				check = document.getElementById('userFormAutoDetectTimezoneYes');
-				div = document.getElementById('userFormTimezone');
-				hidden = document.getElementById('userFormTimezoneHidden');
-				if (check.checked){
-					var client = new Date();
-					var diff = client.getTime() - server.getTime();
-					diff = Math.round(diff*2/3600000);
-					hidden.value = diff/2;
-				}else{
-					hidden.value = div.value;
-				}
-			};
-			  
-		</script>
-	</div>
-</div>
 	
 <?php foreach ($categories as $category) : ?>
 	<div style="display:none" id="<?php echo $genid . $category['name'] ?>">
