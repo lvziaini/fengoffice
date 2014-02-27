@@ -1,4 +1,4 @@
-	About Feng Office 2.5.1 zhangmeng
+	About Feng Office 2.5.1 zhang
 	================================
 	
 	Feng Office is a Collaboration Platform and Project Management System.
