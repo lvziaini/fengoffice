@@ -46,18 +46,18 @@ foreach ($css as $c) {
 
 <div class="form-container">
   <div class="input">
-    <label for="loginUsername"><?php echo lang('email or username') ?>:</label>
+    <label for="loginUsername"><?php echo '用户名' ?>:</label>
     <?php echo text_field('login[username]', array_var($login_data, 'username'), array('id' => 'loginUsername')) ?>
   </div>
   <div class="input">
-    <label for="loginPassword"><?php echo lang('password') ?>:</label>
+    <label for="loginPassword"><?php echo '密码' ?>:</label>
     <?php echo password_field('login[password]', null, array('id' => 'loginPassword')) ?>
   </div>
   <div id="optionsDiv" class="input" style="display:none">
 	<label><?php echo lang('language')?>:</label>
   	<div style="float:right"><?php
   		$handler = new LocalizationConfigHandler();
-  		echo $handler->render('configOptionSelect', array('text' => lang('last language'), 'value' => 'Default'));
+  		echo $handler->render('configOptionSelect', array('text' => '简体中文', 'value' => 'zh_cn'));
   	?></div>
   </div>
   <div style="clear:both;"></div>
@@ -70,19 +70,12 @@ foreach ($css as $c) {
 <?php } // if ?>
 
 	<div class="submit-div">
-		<?php echo submit_button(lang('login')) ?>
-		<span class="forgot-pass"><a class="internalLink" href="<?php echo get_url('access', 'forgot_password') ?>"><?php echo lang('forgot password') ?></a></span>
+		<?php echo submit_button(('登陆')) ?>
+		<span class="forgot-pass"><a class="internalLink" href="<?php echo get_url('access', 'forgot_password') ?>"><?php echo '重置密码' ;?></a></span>
 	</div>
 	<div style="clear:both;"></div>
 	<div class="options-container">
-		<div class="remember-div">
-			<?php echo checkbox_field('login[remember]', array_var($login_data, 'remember') == 'checked', array('id' => 'loginRememberMe')) ?>
-			<label class="checkbox" for="loginRememberMe"><?php echo lang('remember me') ?></label>
-		</div>
-		<div class="options-links">
-			<a id="optionsLink" href="javascript:showMoreOptions()"><?php echo lang('options'); ?></a>
-			<a id="hideOptionsLink" style="display:none" href="javascript:hideMoreOptions()"><?php echo lang ('hide options'); ?></a>
-		</div>
+            </div>
 	</div>
   	
 </form>
@@ -92,7 +85,7 @@ foreach ($css as $c) {
 </div>
 <div class="login-footer">
 	<div class="powered-by">
-		<?php echo lang('footer powered', 'http://www.fengoffice.com/', clean(product_name())) . ' - ' . lang('version') . ' ' . product_version();?>
+		<?php echo lang('footer powered', '', clean(product_name())) . ' - ' . lang('version') . ' ' . product_version();?>
 	</div>
 </div>
 
