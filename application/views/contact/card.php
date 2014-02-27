@@ -25,7 +25,7 @@
                             	echo $jt . $sep . $cn; 
                             ?></h3>
                             
-                            <h4 class="editable"><?php echo lang ('contact info') ?>
+                            <h4 class="editable"><?php echo '联系信息' ?>
                                 <?php if ($contact->canEdit(logged_user())):?>
                             		<a class="edit-link coViewAction ico-edit" href="<?php echo $contact->getEditUrl()?>"><?php echo lang("edit")?></a>
                             	<?php endif;?>                        
@@ -43,9 +43,9 @@
                             </ul>
                             
                             <?php if ($contact->isUser()) :?>
-                            <h4 class="editable"><?php echo lang ('user info') ?>
+                            <h4 class="editable"><?php echo '用户信息' ?>
                             	<?php if ($contact->canEdit(logged_user())):?>
-                            		<a class="edit-link coViewAction ico-edit" href="<?php echo $contact->getEditProfileUrl()?>"><?php echo lang("edit")?></a>
+                            		<a class="edit-link coViewAction ico-edit" href="<?php echo $contact->用户名()?>"><?php echo lang("edit")?></a>
                             	<?php endif;?>
                             </h4>
                             
