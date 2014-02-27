@@ -65,7 +65,7 @@ if(!is_bool($config_is_set) || !$config_is_set) {
 // ---------------------------------------------------
 
 if (!defined('FILES_DIR')) define('FILES_DIR', ROOT . '/upload'); // place where we will upload project files
-define('PRODUCT_NAME', 'Feng Office');
+define('PRODUCT_NAME', 'HengFeng Office');
 define('PRODUCT_URL', 'http://www.fengoffice.com');
 define('DEFAULT_HELP_LINK', 'http://fengoffice.com/web/wiki');
 

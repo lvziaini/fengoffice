@@ -25,16 +25,16 @@ foreach ($css as $c) {
 <?php if (!isset($_GET['instructions_sent']) || !$_GET['instructions_sent']) { ?>
 
   <div class="input">
-    <?php echo label_tag(lang('email address'), 'forgotPasswordEmail')  ?>
+    <?php echo label_tag('邮箱', 'forgotPasswordEmail')  ?>
     <?php echo text_field('your_email', $your_email, array('class' => 'long', 'id' => 'forgotPasswordEmail')) ?>
   </div>
   <input type="hidden" name="submited" value="submited" />
 <?php } ?>
   <div id="forgotPasswordSubmit">
   <?php if (!isset($_GET['instructions_sent']) || !$_GET['instructions_sent']) { 
-  			echo submit_button(lang('change password'));
+  			echo submit_button('修改密码');
   		} ?>
-  	<span>(<a class="internalLink" href="<?php echo get_url('access', 'login') ?>"><?php echo lang('login') ?></a>)</span>
+  	<span><a class="internalLink" href="<?php echo get_url('access', 'login') ?>"><?php echo ('登陆') ?></a></span>
   </div>
 </form>
 
