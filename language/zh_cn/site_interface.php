@@ -573,4 +573,5 @@
 	'guest user' => '访客',
 	'admin user' => '管理员',
 	'user type' => '用户类型',
+        'context' => '相关',
 ); ?>
