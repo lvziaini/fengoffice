@@ -235,4 +235,6 @@
 	'Guest' => '客人',
         'Non-Exec Director' => '无',
        'specify username?' => '指定用户名',
+       'check all' => '全选',
+       'uncheck all' => '全不选',
 ); ?>
