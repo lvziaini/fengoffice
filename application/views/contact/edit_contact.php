@@ -212,19 +212,19 @@
 					<td><?php echo text_field('contact[job_title]', array_var($contact_data, 'job_title'), array('id' => $genid.'profileFormJobTitle', 'maxlength' => '40', 'tabindex' => '105', 'maxlength' => 50)) ?></td>
 				</tr><tr height=20><td></td><td></td></tr>
 				<tr>
-					<td class="td-pr"><?php echo label_tag(lang('wphone'), $genid.'profileFormWPhoneNumber') ?> </td>
+					<td class="td-pr"><?php echo label_tag(lang('phone'), $genid.'profileFormWPhoneNumber') ?> </td>
 					<td><?php echo text_field('contact[w_phone_number]', array_var($contact_data, 'w_phone_number'), array('id' => $genid.'profileFormWPhoneNumber', 'tabindex' => '110', 'maxlength' => 50)) ?></td>
 				</tr><tr>
-					<td class="td-pr"><?php echo label_tag(lang('wphone 2'), $genid.'profileFormWPhoneNumber2') ?> </td>
+					<td class="td-pr"><?php echo label_tag(lang('phone 2'), $genid.'profileFormWPhoneNumber2') ?> </td>
 					<td><?php echo text_field('contact[w_phone_number2]', array_var($contact_data, 'w_phone_number2'), array('id' => $genid.'profileFormWPhoneNumber2', 'tabindex' => '115', 'maxlength' => 50)) ?></td>
 				</tr><tr>
-					<td class="td-pr"><?php echo label_tag(lang('wfax'), $genid.'profileFormWFaxNumber') ?> </td>
+					<td class="td-pr"><?php echo label_tag(lang('fax'), $genid.'profileFormWFaxNumber') ?> </td>
 					<td><?php echo text_field('contact[w_fax_number]', array_var($contact_data, 'w_fax_number'), array('id' => $genid.'profileFormWFaxNumber', 'tabindex' => '120', 'maxlength' => 50)) ?></td>
 				</tr><tr>
-					<td class="td-pr"><?php echo label_tag(lang('wassistant'), $genid.'profileFormWAssistantNumber') ?> </td>
+					<td class="td-pr"><?php echo label_tag(lang('assistant'), $genid.'profileFormWAssistantNumber') ?> </td>
 					<td><?php echo text_field('contact[w_assistant_number]', array_var($contact_data, 'w_assistant_number'), array('id' => $genid.'profileFormWAssistantNumber', 'tabindex' => '125', 'maxlength' => 50)) ?></td>
 				</tr><tr>
-					<td class="td-pr"><?php echo label_tag(lang('wcallback'), $genid.'profileFormWCallbackNumber') ?></td>
+					<td class="td-pr"><?php echo label_tag(lang('callback'), $genid.'profileFormWCallbackNumber') ?></td>
 					<td><?php echo text_field('contact[w_callback_number]', array_var($contact_data, 'w_callback_number'), array('id' => $genid.'profileFormWCallbackNumber', 'tabindex' => '130', 'maxlength' => 50)) ?></td>
 				</tr>
 				</table>
