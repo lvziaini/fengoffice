@@ -279,4 +279,6 @@
 	'user ws config option desc task_display_limit' => '出于性能考虑，此数值不可太大。填“0”则不限制。',
 	'config option name use_owner_company_logo_at_header' => '使用公司Logo作为系统图标',
 	'config option desc use_owner_company_logo_at_header' => '公司Logo显示于屏幕右上角。刷新（按F5）页面应用变更。Logo建议大小50 x 50像素。',
+        'organization data' => '机构数据',
+        'dimensions' => '工作区域',
 ); ?>
